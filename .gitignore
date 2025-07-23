@@ -4,9 +4,7 @@ node_modules/
 # environment secrets
 .env
 
-# log files
-logs/
-*.log
+
 
 # OS junk
 .DS_Store
