@@ -17,7 +17,7 @@ const newUrl = new UrlSchema({
    dailyClicks: new Map([[today, 0]]) 
 })
 await newUrl.save();
-console.log("new url add")
+
 
 
 res.status(201).json({

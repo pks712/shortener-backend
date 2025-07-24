@@ -13,7 +13,7 @@ const openShortUrl = async (req, res) => {
     const now = new Date();
     if (urlData.expiredAt && urlData.expiredAt < now) {
       await urlData.save();
-      return res.redirect("http://localhost:5173/expired");
+      return res.redirect("https://shortener-frontend-rust.vercel.app/expired");
     }
 
     // ✅ Total Clicks
