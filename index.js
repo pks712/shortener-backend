@@ -17,6 +17,7 @@ app.use(cors({
   origin: 'https://shortener-frontend-rust.vercel.app',
   credentials: true ,
 }));
+
 app.use(express.json());
 app.use(useragent.express());
 app.use(cookieParser());
