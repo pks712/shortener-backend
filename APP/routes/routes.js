@@ -11,6 +11,7 @@ import openShortUrl from "../controller/oprnShortUrl.js";
 
 const route = express.Router();
 
+
 // ✅ Analytics
 route.get("/geturl", GetData);
 route.post("/shorturl", validateUrl, createUrl);
