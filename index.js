@@ -14,7 +14,10 @@ dotenv.config();
 const PORT = process.env.PORT || 8080;
 const app = express();
 app.use(cors({
-  origin: 'https://shortener-frontend-rust.vercel.app',
+  origin: [
+  'http://localhost:5173',
+  'https://shortener-frontend-rust.vercel.app'
+] ,
   credentials: true ,
 }));
 
