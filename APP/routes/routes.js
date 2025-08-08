@@ -12,7 +12,7 @@ import openShortUrl from "../controller/oprnShortUrl.js";
 const route = express.Router();
 
 
-// ✅ Analytics
+//  Analytics
 route.get("/geturl", GetData);
 route.post("/shorturl", validateUrl, createUrl);
 route.get("/analytics", getCombinedAnalytics); 
@@ -21,7 +21,7 @@ route.get("/country", getCountryStats);
 route.get("/referre", getReferrerData);
 route.get("/stats/:shortId", getStats);
 
-// ✅ ⚠️ Put this at the END for redirection
+//  Put this at the END for redirection
 route.get("/:shortId", openShortUrl);
 
 export default route;
